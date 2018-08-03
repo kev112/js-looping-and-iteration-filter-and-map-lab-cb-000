@@ -19,7 +19,8 @@ function exactMatch(drivers, attribute) {
   })
 }
 
-function exactMatchToList() {
+function exactMatchToList(drivers, attribute) {
+  exactMatch(drivers, attribute)
   .map(function (driver) {
     return driver.name
   })
