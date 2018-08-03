@@ -20,5 +20,7 @@ function exactMatch(drivers, attribute) {
 }
 
 function exactMatchToList() {
-  
+  .map(function (driver) {
+    return driver.name
+  })
 }
